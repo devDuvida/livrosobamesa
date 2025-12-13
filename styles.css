@@ -1,0 +1,190 @@
+/* RESET E FONTES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fontes: Fredoka para Títulos (alegre) e Nunito para o corpo (limpo) */
+body {
+    font-family: 'Nunito', sans-serif;
+    color: #333;
+    background-color: #f0f8ff; /* Azul clarinho, amigável */
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* CABEÇALHO E NAVEGAÇÃO */
+header {
+    background-color: #ff6f61; /* Vermelho/Coral vibrante */
+    color: white;
+    padding: 15px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.8em;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 5px 15px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #ff8e7b;
+    border-radius: 5px;
+}
+
+/* SEÇÃO HERO */
+.hero {
+    background-color: #92b8f8; /* Azul claro e alegre */
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; /* Para responsividade */
+}
+
+.hero-content {
+    max-width: 500px;
+}
+
+.hero h2 {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 3em;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.btn-principal {
+    display: inline-block;
+    background-color: #ffc300; /* Amarelo divertido */
+    color: #333;
+    text-decoration: none;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 700;
+    padding: 15px 30px;
+    border-radius: 30px;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 0 #e8a900; /* Efeito 3D */
+}
+
+.btn-principal:hover {
+    background-color: #ffdb58;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 0 #e8a900;
+}
+
+/* SEÇÃO MISSÃO E VALORES */
+.mission-section, .characters-section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.mission-section {
+    background-color: white;
+}
+
+.mission-section h3 {
+    font-family: 'Fredoka', sans-serif;
+    color: #ff6f61;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.missao-texto {
+    font-size: 1.3em;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    font-style: italic;
+    color: #555;
+}
+
+.valores-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.valor-item {
+    background-color: #e6f7ff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 300px;
+    flex: 1;
+    min-width: 250px;
+    border-left: 5px solid #ffc300;
+    text-align: left;
+}
+
+.valor-item h4 {
+    color: #92b8f8;
+    margin-bottom: 10px;
+    font-family: 'Fredoka', sans-serif;
+}
+
+/* RODAPÉ */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9em;
+}
+
+/* MEDIA QUERIES PARA RESPONSIVIDADE */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        margin-top: 10px;
+        flex-direction: column;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 5px 0;
+    }
+
+    .hero {
+        padding: 50px 20px;
+    }
+
+    .hero h2 {
+        font-size: 2.5em;
+    }
+}
